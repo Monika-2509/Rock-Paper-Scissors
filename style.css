@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;
+    text-align: center;
+}
+
+.title{
+    background-color: #B5C18E;
+     color:#000;
+     text-align: center;
+     height:5rem;
+     line-height: 5rem;
+     font-weight: 800;
+
+}
+#refresh{
+    display: none;
+    margin-left: 1rem;
+}
+.score-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap:8rem;
+    font-size: 20px;
+    background-color:#ACE1AF;
+    border-radius: 25px;
+    width:50%;
+    margin:20px auto;
+    padding:20px;
+}
+#user-score , #comp-score{
+    font-size: 2rem;
+}
+#user_choice,#comp_choice{
+    transition: all .6s ease-in;
+    margin-top:10px;
+    color: #9B4444;
+    font-weight: 800;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    margin-top: 5rem; 
+}
+.choice {
+    width:165px;
+    height: 165px;
+}
+.choice img{
+    width:150px;
+    height: 150px;
+}
+.choice:hover{
+     opacity: 0.5;
+     cursor:pointer;
+}
+.msg-container{
+    margin:6rem 0rem;
+}
+#msg{
+    display:inline;
+    width:50%;
+    background-color:#B5C18E;
+    padding:1rem 8rem;
+    font-size: 1.5rem;
+    border-radius: 25px;
+}
+
+@media screen and (max-width:728px) {
+    .score-container{
+        width: 80%;
+        gap:6rem;
+     }
+     .choices{
+        flex-wrap: wrap;
+     }
+     #msg{
+          width:100%;
+          padding:1rem 3rem;
+     }
+     .title{
+        font-size: 1.5rem;
+     }
+  }
+
+  

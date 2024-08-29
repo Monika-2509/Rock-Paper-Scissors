@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link type="image/png" sizes="16x16" rel="icon" href="favicon.png">
+</head>
+
+<body>
+    <h1 class="title">
+        Rock  Paper  Scissors
+        <span id="refresh"><i class="fa-solid fa-arrow-rotate-left"></i></span>
+    </h1>
+    <div class="score-container">
+         <div>
+            <p id="user-score">0</p>
+            <h4>Player</h4>
+            <p id="user_choice"></p>
+         </div>
+         <div >
+            <p id="comp-score">0</p>
+            <h4>Computer</h4>
+            <p id="comp_choice"></p>
+         </div>
+    </div>
+    <div class="choices">
+        <div class="choice" id="rock">
+             <img src="./rock.png" alt="">
+        </div>
+        <div class="choice" id="paper">
+                <img src="./paper.png" alt="">
+        </div>
+        <div class="choice" id="scissor">
+               <img src="./scissors.png" alt="">
+        </div>
+    </div>
+    <div class="msg-container">
+           <p id="msg">
+            Play Your Move
+           </p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
